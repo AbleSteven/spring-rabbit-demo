@@ -1,0 +1,15 @@
+server:
+  port: 3080
+
+spring:
+  rabbitmq:
+    host: 10.0.2.168,10.0.2.169,10.0.2.170
+    username: admin
+    password: 123456
+    publisher-confirms: true #支持发布确认
+    publisher-returns: true  #支持发布返回
+    listener:
+      direct:
+        acknowledge-mode: manual #采用手动应答
+        retry:
+          enabled: true #是否支持重试
