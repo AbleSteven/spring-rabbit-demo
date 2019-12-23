@@ -3,7 +3,7 @@ server:
 
 spring:
   rabbitmq:
-    host: 10.0.2.168,10.0.2.169,10.0.2.170
+    host: 10.0.2.168
     username: admin
     password: 123456
     publisher-confirms: true #支持发布确认

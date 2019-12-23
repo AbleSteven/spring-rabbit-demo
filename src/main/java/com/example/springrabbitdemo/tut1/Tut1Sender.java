@@ -25,7 +25,7 @@ public class Tut1Sender {
 
     private AtomicLong count = new AtomicLong(0);
 
-    @Scheduled(fixedDelay = 1000, initialDelay = 1000)
+//    @Scheduled(fixedDelay = 1000, initialDelay = 1000)
     public void send() {
         Date message = new Date();
         CorrelationData correlationData = new CorrelationData();
